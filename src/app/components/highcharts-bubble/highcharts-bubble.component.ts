@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HighchartsChartModule } from 'highcharts-angular';
 import * as Highcharts from 'highcharts';
+import * as HighchartsMore from 'highcharts/highcharts-more';
 import { MOCK_DATA, CountryData } from '../../models/chart-data.interface';
+
+// Initialize the highcharts-more module
+HighchartsMore(Highcharts);
 
 @Component({
   selector: 'app-highcharts-bubble',

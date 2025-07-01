@@ -1,7 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { BaseChartDirective } from 'ng2-charts';
 import { ChartConfiguration, ChartType } from 'chart.js';
+import {
+  Chart,
+  LinearScale,
+  CategoryScale,
+  PointElement,
+  BubbleController,
+  Tooltip,
+  Legend,
+  Title
+} from 'chart.js';
 import { MOCK_DATA, CountryData } from '../../models/chart-data.interface';
+
+// Register Chart.js components
+Chart.register(
+  LinearScale,
+  CategoryScale,
+  PointElement,
+  BubbleController,
+  Tooltip,
+  Legend,
+  Title
+);
 
 @Component({
   selector: 'app-chartjs-bubble',
