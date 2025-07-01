@@ -46,7 +46,7 @@ import { MOCK_DATA, CountryData } from '../../models/chart-data.interface';
   `]
 })
 export class ChartjsBubbleComponent implements OnInit {
-  public bubbleChartType: ChartType = 'bubble';
+  public bubbleChartType: 'bubble' = 'bubble';
   public bubbleChartData: ChartConfiguration<'bubble'>['data'] = { datasets: [] };
   public bubbleChartOptions: ChartConfiguration<'bubble'>['options'] = {};
 
@@ -84,7 +84,7 @@ export class ChartjsBubbleComponent implements OnInit {
           text: 'Income vs Life Expectancy by Population',
           font: {
             size: 18,
-            weight: '500',
+            weight: 500,
             family: 'Inter, sans-serif'
           },
           color: '#2c3e50'
@@ -133,7 +133,7 @@ export class ChartjsBubbleComponent implements OnInit {
             text: 'Average Income (USD)',
             font: {
               size: 14,
-              weight: '500',
+              weight: 500,
               family: 'Inter, sans-serif'
             }
           },
@@ -152,7 +152,7 @@ export class ChartjsBubbleComponent implements OnInit {
             text: 'Life Expectancy (Years)',
             font: {
               size: 14,
-              weight: '500',
+              weight: 500,
               family: 'Inter, sans-serif'
             }
           },
