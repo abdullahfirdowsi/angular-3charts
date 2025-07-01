@@ -107,7 +107,7 @@ export class HighchartsBubbleComponent implements OnInit {
         headerFormat: '<table>',
         pointFormat: `
           <tr><th colspan="2"><h3 style="margin:0; color: {point.color}">{point.name}</h3></th></tr>
-          <tr><th>Income:</th><td>${{point.x:,.0f}}</td></tr>
+          <tr><th>Income:</th><td>{point.x:,.0f}</td></tr>
           <tr><th>Life Expectancy:</th><td>{point.y:.1f} years</td></tr>
           <tr><th>Population:</th><td>{point.population:,.0f}</td></tr>
         `,
