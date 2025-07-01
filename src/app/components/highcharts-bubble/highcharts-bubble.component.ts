@@ -5,7 +5,7 @@ import * as HighchartsMore from 'highcharts/highcharts-more';
 import { MOCK_DATA, CountryData } from '../../models/chart-data.interface';
 
 // Initialize the highcharts-more module
-HighchartsMore(Highcharts);
+HighchartsMore.default(Highcharts);
 
 @Component({
   selector: 'app-highcharts-bubble',
