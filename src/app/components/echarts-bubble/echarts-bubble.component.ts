@@ -66,7 +66,7 @@ export class EchartsBubbleComponent implements OnInit {
         left: 'center',
         textStyle: {
           fontSize: 18,
-          fontWeight: '500',
+          fontWeight: 500,
           color: '#2c3e50',
           fontFamily: 'Inter, sans-serif'
         }
@@ -85,7 +85,7 @@ export class EchartsBubbleComponent implements OnInit {
         nameGap: 30,
         nameTextStyle: {
           fontSize: 14,
-          fontWeight: '500'
+          fontWeight: 500
         },
         axisLabel: {
           formatter: (value: number) => '$' + value.toLocaleString()
@@ -103,7 +103,7 @@ export class EchartsBubbleComponent implements OnInit {
         nameGap: 40,
         nameTextStyle: {
           fontSize: 14,
-          fontWeight: '500'
+          fontWeight: 500
         },
         splitLine: {
           lineStyle: {
