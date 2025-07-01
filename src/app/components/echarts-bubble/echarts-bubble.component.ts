@@ -22,23 +22,24 @@ import { MOCK_DATA, CountryData } from '../../models/chart-data.interface';
     .chart-container {
       padding: 20px;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      width: 100%;
     }
 
     .chart-title {
       text-align: center;
-      color: #2c3e50;
-      font-size: 24px;
-      font-weight: 600;
+      color: #333;
+      font-size: 20px;
+      font-weight: 500;
       margin-bottom: 20px;
-      border-bottom: 3px solid #e74c3c;
       padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
     }
 
     .chart {
-      height: 500px;
+      height: 400px;
+      width: 100%;
     }
   `]
 })
@@ -60,7 +61,7 @@ export class EchartsBubbleComponent implements OnInit {
     ]);
 
     this.chartOptions = {
-      backgroundColor: '#fafafa',
+      backgroundColor: 'white',
       title: {
         text: 'Income vs Life Expectancy by Population',
         left: 'center',

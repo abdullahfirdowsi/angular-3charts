@@ -1,3 +1,6 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 /* Global styles */
 * {
   box-sizing: border-box;
@@ -11,9 +14,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Import Inter font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 /* Chart container responsive styles */
 @media (max-width: 768px) {
   .chart-container {
@@ -22,22 +22,12 @@ body {
   }
   
   .chart-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .chart {
-    height: 400px;
+    height: 300px;
   }
-}
-
-/* Smooth transitions for interactive elements */
-.chart-container {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.chart-container:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* Custom scrollbar */
